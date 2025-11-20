@@ -1,0 +1,88 @@
+.home-office {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background:#556B2F;
+  color: #fff;
+  position: relative;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.home-office img {
+  height: 500px;
+  width: auto;
+}
+
+.office-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.office-text h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.office-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.animated-line-container{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 2rem;
+  }
+  .animated-line{
+    height: 4px;
+    width: 0;
+    background: #333;
+    animation: growLine 2s ease-out forwards;
+  }
+  @keyframes growLine{
+    to{
+      width:100%;
+    }
+  }
+.offices-cta {
+  margin-top: 20px;
+}
+
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  color: #0077cc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-link img {
+  height: 16px;
+  width: 16px;
+  margin-left: 8px;
+}
+
+.grid-lines {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.line-25,
+.line-50 {
+  height: 4px;
+  background-color: #ccc;
+}
+
+.line-25 {
+  width: 25%;
+}
+
+.line-50 {
+  width: 50%;
+}

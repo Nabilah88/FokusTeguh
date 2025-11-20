@@ -1,0 +1,78 @@
+/* Hero Section */
+.maintain-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 8%;
+  background-color: #f7f8f4; /* light olive background */
+  gap: 2rem;
+  overflow: hidden; /* prevent overflow during animation */
+}
+
+/* Left side (text) */
+.maintain-text {
+  flex: 1;
+  max-width: 550px;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLeft 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.maintain-text h1 {
+  font-size: 2.5rem;
+  color: #3b4d2a; /* deep olive green */
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.maintain-text p {
+  font-size: 1.2rem;
+  color: #4f5d3b; /* softer olive tone */
+  line-height: 1.6;
+}
+
+/* Right side (image) */
+.maintain-hero::after {
+  content: "";
+  flex: 1;
+  background: url("../../assets/man_fix.jpg") no-repeat center center/cover;
+  border-radius: 12px;
+  min-height: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideInRight 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+/* Keyframes */
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .maintain-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .maintain-hero::after {
+    width: 100%;
+    min-height: 250px;
+    margin-top: 1.5rem;
+    animation-delay: 0.8s; /* delay a bit more on mobile */
+  }
+}
+

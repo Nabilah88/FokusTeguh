@@ -1,0 +1,88 @@
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 8%;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+  box-sizing: border-box; 
+}
+
+.image-section {
+  flex: 1;
+  position: relative;
+  margin-right: 40px;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  filter: blur(0.5px); 
+  object-fit: cover;
+}
+
+.image-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(to left, #fff 0%, transparent 100%);
+}
+
+.text-section {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;   
+}
+
+.text-section h1 {
+  font-size: 2.5rem;
+  color: #1f2937; 
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #6B8E23;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #556B2F; 
+}
+
+.wavy-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.wavy-line svg {
+  display: block;
+  width: 100%;
+  height: 60px;
+}

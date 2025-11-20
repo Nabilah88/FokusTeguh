@@ -1,0 +1,47 @@
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.projek {
+  background:linear-gradient(rgba(45, 58, 0, 0.7), rgba(45, 58, 0, 0.7)), url('../../assets/image1.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  gap: 1.5rem; /* Adds vertical gap between elements */
+  animation: fadeInUp 1s ease-out;
+}
+
+.projek h2 {
+  font-size: 1rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.projek h1 {
+  font-size: 3rem;
+  margin: 0;
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.projek p {
+  font-size: 1.2rem;
+  margin: 0;
+  animation: fadeInUp 1s ease-out 0.6s both;
+}

@@ -1,0 +1,71 @@
+.why-container {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  /*font-family: Arial, sans-serif;*/
+}
+
+.left-section {
+  flex: 1;
+  background: linear-gradient(to bottom right, #1d2b03, #273a08);
+  color: #6B8E23;
+  padding: 40px;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px;
+}
+
+.left-section h2 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.left-section span {
+  display: block;
+  font-size: 36px;
+  color: #6B8E23;
+  font-weight: bold;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.reason {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.reason-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+
+.text h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.text p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #444;
+}

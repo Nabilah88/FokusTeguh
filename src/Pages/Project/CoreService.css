@@ -1,0 +1,49 @@
+
+.core-section {
+  padding: 4rem 2rem;
+  background: #f9fafb; 
+  text-align: center;
+}
+
+.core-title h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #1f2937; 
+  position: relative;
+  display: inline-block;
+}
+
+
+.core-title h1::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  background: #2563eb; 
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+
+.core-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+}
+
+/* Card Styles */
+.core-container > div {
+  background: #ffffff;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 320px;
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+

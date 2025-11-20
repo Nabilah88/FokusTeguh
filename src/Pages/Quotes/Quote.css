@@ -1,0 +1,83 @@
+/* Page Layout */
+.quote-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f0f4f8, #dbeafe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Card Container */
+.quote-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 700px;
+  width: 100%;
+  border: 1px solid #c7d2fe;
+}
+
+/* Title */
+.quote-title {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1e8a47;
+}
+
+/* Form Styling */
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus {
+  border-color: #4d6d19;
+  outline: none;
+}
+
+/* Button */
+.quote-form button {
+  background-color: #282e26;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quote-form button:hover {
+  background-color: #1e40af;
+}
+
+.quote-form button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* Success Message */
+.quote-success {
+  margin-top: 20px;
+  text-align: center;
+  color: #059669;
+  font-weight: 500;
+}
